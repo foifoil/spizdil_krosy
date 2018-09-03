@@ -1,0 +1,20 @@
+﻿// Assembly EveAIO, Version 5.0.0.29
+
+[assembly: System.Reflection.AssemblyTrademark("")]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile="log4net.config", Watch=true)]
+[assembly: System.Reflection.AssemblyProduct("EveAIO")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.6.1", FrameworkDisplayName=".NET Framework 4.6.1")]
+[assembly: System.Windows.ThemeInfo(System.Windows.ResourceDictionaryLocation.None, System.Windows.ResourceDictionaryLocation.SourceAssembly)]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Reflection.AssemblyFileVersion("5.0.0.29")]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Reflection.AssemblyConfiguration("")]
+[assembly: System.Reflection.AssemblyCompany("EveRobotics")]
+[assembly: System.Reflection.AssemblyTitle("EveAIO")]
+[assembly: System.Reflection.AssemblyKeyName("")]
+[assembly: System.Reflection.AssemblyCopyright("EveRobotics Copyright \x00a9  2018")]
+[assembly: System.Reflection.AssemblyDelaySign(false)]
+[assembly: System.Reflection.AssemblyDescription("")]
+

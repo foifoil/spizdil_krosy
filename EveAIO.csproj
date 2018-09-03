@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>42e3e3dd-8516-4e5a-a4c6-fa36b94d26cb</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EveAIO</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="log4net" />
+    <Reference Include="WebDriver" />
+    <Reference Include="System.Xml" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="AutomaticUpdaterWPF" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="EO.WebBrowser" />
+    <Reference Include="EO.WebBrowser.Wpf" />
+    <Reference Include="EO.WebEngine" />
+    <Reference Include="HtmlAgilityPack" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tweetinvi" />
+    <Reference Include="EO.Base" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Management" />
+    <Reference Include="Discord.Net.Rest" />
+    <Reference Include="Discord.Net.Webhook" />
+    <Reference Include="Discord.Net.Commands" />
+    <Reference Include="Discord.Net.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="WebDriver.Support" />
+    <Reference Include="Twilio" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="EveAIO\Client.cs" />
+    <Compile Include="EveAIO\CloudFlareSolver.cs" />
+    <Compile Include="EveAIO\CookieObject.cs" />
+    <Compile Include="EveAIO\EncryptorAes2.cs" />
+    <Compile Include="EveAIO\LoginPoolEnum.cs" />
+    <Compile Include="EveAIO\Extensions.cs" />
+    <Compile Include="EveAIO\KeyVal!2.cs" />
+    <Compile Include="EveAIO\LoginPool.cs" />
+    <Compile Include="EveAIO\ProxyPinger.cs" />
+    <Compile Include="EveAIO\ProxyTester.cs" />
+    <Compile Include="EveAIO\WebsitesInfo.cs" />
+    <Compile Include="EveAIO\EncryptorAes.cs" />
+    <Compile Include="EveAIO\CaptchaServiceType.cs" />
+    <Compile Include="EveAIO\Global.cs" />
+    <Compile Include="EveAIO\Helpers.cs" />
+    <Compile Include="EveAIO\License.cs" />
+    <Compile Include="EveAIO\Settings.cs" />
+    <Compile Include="EveAIO\App.cs" />
+    <Compile Include="EveAIO\MainWindow.cs" />
+    <Compile Include="EveAIO\Properties\Resources.cs" />
+    <Compile Include="EveAIO\Properties\Settings.cs" />
+    <Compile Include="EveAIO\Views\AdvancedTaskSettingsView.cs" />
+    <Compile Include="EveAIO\Views\BillingView.cs" />
+    <Compile Include="EveAIO\Views\Browser1View.cs" />
+    <Compile Include="EveAIO\Views\Browser2View.cs" />
+    <Compile Include="EveAIO\Views\Browser3View.cs" />
+    <Compile Include="EveAIO\Views\Browser4View.cs" />
+    <Compile Include="EveAIO\Views\BrowserWindow.cs" />
+    <Compile Include="EveAIO\Views\CaptchaSolverWindow.cs" />
+    <Compile Include="EveAIO\Views\LoaderHtmlElement.cs" />
+    <Compile Include="EveAIO\Views\GroupsToTotalConverter.cs" />
+    <Compile Include="EveAIO\Views\ConditionalActiveCountConverter.cs" />
+    <Compile Include="EveAIO\Views\DashboardView.cs" />
+    <Compile Include="EveAIO\Views\GeneralTaskSettingsView.cs" />
+    <Compile Include="EveAIO\Views\LoginPoolsWindow.cs" />
+    <Compile Include="EveAIO\Views\MassEditWindow.cs" />
+    <Compile Include="EveAIO\Views\MassLinkChangeWindow.cs" />
+    <Compile Include="EveAIO\Views\NotificationsView.cs" />
+    <Compile Include="EveAIO\Views\PaymentView.cs" />
+    <Compile Include="EveAIO\Views\PlatformView.cs" />
+    <Compile Include="EveAIO\Views\PrivacyView.cs" />
+    <Compile Include="EveAIO\Views\PrivacyWindow.cs" />
+    <Compile Include="EveAIO\Views\ProfileGroupWindow.cs" />
+    <Compile Include="EveAIO\Views\ProfileImportWindow.cs" />
+    <Compile Include="EveAIO\Views\ProfileWindow.cs" />
+    <Compile Include="EveAIO\Views\ProxyListWindow.cs" />
+    <Compile Include="EveAIO\Views\ProxyView.cs" />
+    <Compile Include="EveAIO\Views\QuickTaskWindow.cs" />
+    <Compile Include="EveAIO\Views\ScheduleWindow.cs" />
+    <Compile Include="EveAIO\Views\SettingsImExWindow.cs" />
+    <Compile Include="EveAIO\Views\SettingsView.cs" />
+    <Compile Include="EveAIO\Views\ShippingView.cs" />
+    <Compile Include="EveAIO\Views\SoleboxInfo.cs" />
+    <Compile Include="EveAIO\Views\SuccessView.cs" />
+    <Compile Include="EveAIO\Views\SupremePickerWindow.cs" />
+    <Compile Include="EveAIO\Views\TaskWindow2.cs" />
+    <Compile Include="EveAIO\Views\ToolsView.cs" />
+    <Compile Include="EveAIO\Views\CaptchaView.cs" />
+    <Compile Include="EveAIO\Views\LogView.cs" />
+    <Compile Include="EveAIO\Views\ProfilesView.cs" />
+    <Compile Include="EveAIO\Views\Splash.cs" />
+    <Compile Include="EveAIO\Views\Platforms\AdidasControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\BackdoorControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\BarneysControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\BoxlunchControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\ConverseControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FinishlineControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FootactionControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FootlockerauControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FootlockerControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FootlockereuControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FootSitesControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\FunkoControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\HibbettControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\HolypopstoreControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\HottopicControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\JimmyJazzControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\McmControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\MeshControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\MrPorterControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\NordstromControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\OffWhiteControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\OneblockdownControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\PumaControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SevresControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\ShopifyControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SivasdescalzoControl.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SneakernstuffControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SoleboxControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SupremeControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\SupremeInstoreControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\TitoloControl2.cs" />
+    <Compile Include="EveAIO\Views\Platforms\WoodwoodControl2.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\BackdoorMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\BoxlunchMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\HibbettMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\MrPorterMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\OffWhiteMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\ShopifyMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\SneakersnstuffMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\SoleboxMassEditControl.cs" />
+    <Compile Include="EveAIO\Views\MassEdit\SupremeMassEditControl.cs" />
+    <Compile Include="EveAIO\Tasks\MeshAddress.cs" />
+    <Compile Include="EveAIO\Tasks\MeshCustomer.cs" />
+    <Compile Include="EveAIO\Tasks\NordStromProduct.cs" />
+    <Compile Include="EveAIO\Tasks\CheckoutLink.cs" />
+    <Compile Include="EveAIO\Tasks\Product.cs" />
+    <Compile Include="EveAIO\Tasks\Sensor.cs" />
+    <Compile Include="EveAIO\Tasks\SensorJson.cs" />
+    <Compile Include="EveAIO\Tasks\ShopifyCommon.cs" />
+    <Compile Include="EveAIO\Tasks\ShopifyCookie.cs" />
+    <Compile Include="EveAIO\Tasks\ShopifyMultiAddition.cs" />
+    <Compile Include="EveAIO\Tasks\ShopifySession.cs" />
+    <Compile Include="EveAIO\Tasks\ShopifyWebsiteInfo.cs" />
+    <Compile Include="EveAIO\Tasks\States.cs" />
+    <Compile Include="EveAIO\Tasks\SupremeProduct.cs" />
+    <Compile Include="EveAIO\Tasks\SupremeStyle.cs" />
+    <Compile Include="EveAIO\Tasks\TaskManager.cs" />
+    <Compile Include="EveAIO\Tasks\TaskRunner.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Adidas.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Backdoor.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Barneys.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Boxlunch.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Converse.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Footaction.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Footlocker.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Footlockerau.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Footlockereu.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Footsites.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Funko.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Hanon.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Hibbett.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Holypopstore.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Hottopic.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\IPlatform.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\JimmyJazz.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Mcm.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Mesh.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\MrPorter.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Nordstrom.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\OffWhite.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Oneblockdown.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Puma.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Sevres.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Shopify.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Shopify2.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Sivasdescalzo.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Sneakernstuff.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Solebox.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Supreme.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\SupremeInstore.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Titolo.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Woodwood.cs" />
+    <Compile Include="EveAIO\Tasks\Platforms\Finishline.cs" />
+    <Compile Include="EveAIO\Tasks\Dto\BarneysProduct.cs" />
+    <Compile Include="EveAIO\Tasks\Dto\PumaProduct.cs" />
+    <Compile Include="EveAIO\Tasks\Dto\ShopifyAddress.cs" />
+    <Compile Include="EveAIO\Tasks\Dto\ShopifyCheckout.cs" />
+    <Compile Include="EveAIO\Tasks\Dto\ShopifyInit.cs" />
+    <Compile Include="EveAIO\Privacy\PrivacyCard.cs" />
+    <Compile Include="EveAIO\Privacy\PrivacyManager.cs" />
+    <Compile Include="EveAIO\Pocos\DiscordObject.cs" />
+    <Compile Include="EveAIO\Pocos\Profile.cs" />
+    <Compile Include="EveAIO\Pocos\ProfileGroupObject.cs" />
+    <Compile Include="EveAIO\Pocos\ProxyListObject.cs" />
+    <Compile Include="EveAIO\Pocos\ProxyObject.cs" />
+    <Compile Include="EveAIO\Pocos\QuickTaskObject.cs" />
+    <Compile Include="EveAIO\Pocos\SlackObject.cs" />
+    <Compile Include="EveAIO\Pocos\SmsObject.cs" />
+    <Compile Include="EveAIO\Pocos\SynchronizedObservableCollection!1.cs" />
+    <Compile Include="EveAIO\Pocos\TaskObject.cs" />
+    <Compile Include="EveAIO\Pocos\TwitterObject.cs" />
+    <Compile Include="EveAIO\Pocos\ProfileObject.cs" />
+    <Compile Include="EveAIO\Pocos\SuccessObject.cs" />
+    <Compile Include="EveAIO\Notifications\Notificator.cs" />
+    <Compile Include="EveAIO\Notifications\Payload.cs" />
+    <Compile Include="EveAIO\Notifications\Attachment.cs" />
+    <Compile Include="EveAIO\Notifications\SlackClient.cs" />
+    <Compile Include="EveAIO\Cloudflare\ChallengeSolution.cs" />
+    <Compile Include="EveAIO\Cloudflare\ChallengeSolver.cs" />
+    <Compile Include="EveAIO\Cloudflare\ClearanceHandler.cs" />
+    <Compile Include="EveAIO\Cloudflare\CloudFlareClearanceException.cs" />
+    <Compile Include="EveAIO\Cloudflare\CookieExtensions.cs" />
+    <Compile Include="EveAIO\Cloudflare\HttpHeader.cs" />
+    <Compile Include="EveAIO\Cloudflare\HttpMessageHandlerExtensions.cs" />
+    <Compile Include="EveAIO\Captcha\AutoHarvester.cs" />
+    <Compile Include="EveAIO\Captcha\CaptchaSolver.cs" />
+    <Compile Include="EveAIO\Captcha\CaptchaToken.cs" />
+    <Compile Include="EveAIO\Captcha\CaptchaWaiter.cs" />
+    <Compile Include="EveAIO\Captcha\Harvester.cs" />
+    <Compile Include="EveAIO\Captcha\ManualHarvester.cs" />
+    <Compile Include="ConfusedByAttribute.cs" />
+    <Compile Include="_Module_{CC743BF4-8AF2-4BDC-9F97-0F32702A9445}.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="dummy_ptr\{59c046d0-dfc3-45fd-96b8-072f65085584}.cs" />
+    <Compile Include="dummy_ptr\{b35d1a71-4291-4689-a7ed-25499f7efdd8}.cs" />
+    <EmbeddedResource Include="EveAIO.g.resources" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.SplashForm.resources" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="EveAIO.Properties.Resources.resources" />
+  </ItemGroup>
+</Project>
